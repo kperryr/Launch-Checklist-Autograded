@@ -3,7 +3,7 @@ const helper = require('./scriptHelper');
 console.log("hello");//testing error issue
 
 window.addEventListener("load", function() {
-    console.log("hello");//testing error issue
+    
 
     let buttonpmn = document.getElementById('formSubmit');
     let form = document.querySelectorAll('testForm');
