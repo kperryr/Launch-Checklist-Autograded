@@ -18,10 +18,27 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
  }
  
  function validateInput(testInput) {
-    
+    if(isNaN(testInput)){
+        if (testInput === ""){//edit if empty string is not giving right result
+            return "Empty";
+        }else{
+            return "Not a Number";
+        }
+
+    }else{
+        return "Is a Number";
+    }
  }
  
  function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+    let newPilot = list.getElementById("pilotStatus");
+    if (validateInput(pilot) === "Not a Number"){
+        newPilot.innerHTML = ` Pilot Ready. Name: ${pilot}`;
+        
+    }else{
+        newPilot.innerHTML = `Pilot Not Ready`;
+        alert('Pilot Name is not Valid');
+    }
     
  }
  

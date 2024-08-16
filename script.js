@@ -1,6 +1,21 @@
 // Write your JavaScript code here!
+const helper = require('./scriptHelper');
+console.log("hello");//testing error issue
 
 window.addEventListener("load", function() {
+    console.log("hello");//testing error issue
+
+    let buttonpmn = document.getElementById('formSubmit');
+    let form = document.querySelectorAll('testForm');
+    let faultyList = document.getElementById("faultyItems");
+    let pilotName = document.getElementById("pilotName");
+
+    button.addEventListener("submit", function(){
+        helper.formSubmission(form,faultyList,pilotName,0,0,0);
+    })
+    
+
+
 
     let listedPlanets;
     // Set listedPlanetsResponse equal to the value returned by calling myFetch()
