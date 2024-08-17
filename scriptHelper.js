@@ -47,17 +47,17 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 
 
     if (validateInput(copilot) === "Not a Number"){
-        coPilotStatus.innerHTML= ` CoPilot ${copilot} is ready for launch`;  
+        coPilotStatus.innerHTML= ` Co-pilot ${copilot} is ready for launch`;  
          
     }else{
         coPilotStatus.innerHTML = `CoPilot is not Ready`;
-        alert('CoPilot Name is not Valid');
+        alert('Co-pilot Name is not Valid');
         
     }
 
     
     if(validateInput(fuelLevel) === "Is a Number"){
-        if (parseInt(fuelLevel) > 10000){
+        if (parseInt(fuelLevel) >= 10000){
             fuelStatus.innerHTML = `Fuel level high enough for launch`;
             list.style.visibility = "visible";
             flag[0] = true;
