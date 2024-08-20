@@ -21,6 +21,8 @@ window.addEventListener("load", function() {
         form[i].addEventListener("submit", function(event){
             if ((!(pilotName.value&&coPilotName.value&&fuelLevel.value&&cargoMass.value))){
                 alert(" All Fields Required.");
+                event.preventDefault();
+            
 
             }else{
 
